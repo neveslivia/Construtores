@@ -1,8 +1,18 @@
 package Entities;
 
 public class Ex_2 {
-    public String nome;
-    public int idade;
+   private String nome;
+    private int idade;
+
+    public String getNome() {
+        return nome;
+    }
+
+
+    public int getIdade() {
+        return idade;
+    }
+
 
     public Ex_2(String nome, int idade) {
         this.nome = nome;
@@ -15,7 +25,7 @@ public class Ex_2 {
 
     @Override
     public String toString() {
-        return "Nome: " + nome + "\n" +
-                "Idade:" + idade ;
+        return "Nome: " + getNome() + "\n" +
+                "Idade:" + getIdade() ;
     }
 }

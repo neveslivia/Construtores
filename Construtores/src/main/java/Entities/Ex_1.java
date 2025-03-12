@@ -1,8 +1,17 @@
 package Entities;
 
 public class Ex_1 {
-    public String marca;
-    public int ano;
+    private String marca;
+    private int ano;
+
+    public String getMarca() {
+        return marca;
+    }
+
+
+    public int getAno() {
+        return ano;
+    }
 
     public Ex_1() {
         this.marca = "Fiat";
@@ -12,7 +21,7 @@ public class Ex_1 {
 
     @Override
     public String toString() {
-        return "Marca " + marca + "\n" +
-                "Ano " + ano;
+        return "Marca " + getMarca() + "\n" +
+                "Ano " +getAno();
     }
 }

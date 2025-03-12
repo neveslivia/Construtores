@@ -1,9 +1,24 @@
 package Entities;
 
 public class Ex_3 {
-    public String titular;
-    public double saldo;
-    public String tipoConta;
+    private String titular;
+    private double saldo;
+    private String tipoConta;
+
+    public String getTitular() {
+        return titular;
+    }
+
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+
+    public String getTipoConta() {
+        return tipoConta;
+    }
+
 
     public Ex_3(String titular, double saldo, String tipoConta) {
         this.titular = titular;
@@ -19,8 +34,8 @@ public class Ex_3 {
 
     @Override
     public String toString() {
-        return "Titular : " + titular + "\n" +
-                "Saldo: " + saldo + "\n"+
-                "Tipo de Conta: " + tipoConta;
+        return "Titular : " + getTitular() + "\n" +
+                "Saldo: " +getSaldo()+ "\n"+
+                "Tipo de Conta: " +getTipoConta();
     }
 }

@@ -1,9 +1,16 @@
 package Entities;
 
 public class Ex_4 {
-    public String nome;
-    public double preco;
+    private String nome;
+    private double preco;
 
+    public String getNome() {
+        return nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
 
     public Ex_4(String nome, double preco) {
         this.nome = nome;
@@ -16,6 +23,6 @@ public class Ex_4 {
 
     @Override
     public String toString() {
-        return "Nome: " + nome + "\n" + "Preço: " + preco;
+        return "Nome: " + getNome() + "\n" + "Preço: " + getPreco();
     }
 }
